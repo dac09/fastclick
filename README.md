@@ -1,3 +1,8 @@
+# Note
+Forked version with a fix for disabling fastclick with the class `needsclick`
+
+This helps with select boxes on iOS 8.4
+
 # FastClick #
 
 FastClick is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a `click` event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.
