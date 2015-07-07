@@ -1,7 +1,16 @@
 # Note
 Forked version with a fix for disabling fastclick with the class `needsclick`
 
-This helps with select boxes on iOS 8.4
+This helps with e.g. select boxes on iOS 8.4 by adding the required class.
+
+#### Example
+```
+<select class="needsfix">
+	<option value="1">One</option>
+	<option value="2">Two</option>
+</select>
+```
+This will disable fast click for the select box, so that it does not behave irratically on iOS 8.4
 
 # FastClick #
 
