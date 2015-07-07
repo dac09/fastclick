@@ -1,7 +1,9 @@
 # Note
-Forked version with a fix for disabling fastclick with the class `needsclick`
+Forked version with a fix for disabling fastclick with the class `needsclick`. Although this is supposed to be a normal fast click feature, it doesn't seem to work in the official library.
 
-This helps with e.g. select boxes on iOS 8.4 by adding the required class.
+Only adds 3 new lines, to do an extra check for the class.
+
+This helps with e.g. select boxes on iOS 8 by adding the required class. Older versions of iOS don't seem to show this problem.
 
 #### Example
 ```
@@ -10,9 +12,9 @@ This helps with e.g. select boxes on iOS 8.4 by adding the required class.
 	<option value="2">Two</option>
 </select>
 ```
-This will disable fast click for the select box, so that it does not behave irratically on iOS 8.4
+This will disable fast click for the select box, so that it does not autoclose or jump to the next input on iOS 8 (Cordova/Phonegap and Safari).
 
-# FastClick #
+# FastClick + needsclick fix #
 
 FastClick is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a `click` event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.
 
